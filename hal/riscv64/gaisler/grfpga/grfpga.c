@@ -56,6 +56,11 @@ int hal_platformctl(void *ptr)
 }
 
 
+void hal_platformInitCore(void)
+{
+}
+
+
 void _hal_platformInit(void)
 {
 	hal_spinlockCreate(&grfpga_common.lock, "grfpga_common.lock");
